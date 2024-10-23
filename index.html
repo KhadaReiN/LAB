@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrera hasta el bus</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="contador">
+        <span id="minutos">00</span>:<span id="segundos">00</span>
+    </div>
+    <div id="maze"></div>
+    
+    <div id="btn">
+        <button id="generateMaze">Generar Nuevo Laberinto</button>
+    </div>
+    
+
+    <audio id="musica-fondo">
+        <source src="./assets/bus.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento audio.
+    </audio>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/maze.js"></script>
+</body>
+</html>
