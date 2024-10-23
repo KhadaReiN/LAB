@@ -1,0 +1,80 @@
+@font-face {
+    font-family: classy;
+    src: url(/fonts/classy_vogue/Classyvogueregular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    justify-items: center;
+}
+
+#maze {
+    display: grid;
+    gap: 2px;
+    margin: 20px auto;
+    width: max-content;
+}
+
+/* Estilos para las celdas */
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #313131;
+}
+
+/* Estilo para el inicio y el final */
+.start {
+    background-color: #407a2e;
+}
+
+.end {
+    background-image: url('../assets/bus-solid.svg');
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    /*transform: translateY(40px);
+    */transition: 4ms all ease;
+}
+
+/* Paredes */
+.wall {
+    background-color: #a5a5a5;
+    border: 1px solid #2c2c2c83;
+
+}
+
+/* Celda activa (donde está el jugador) */
+.active {
+    /*background-color: #756bff;*/
+    color: #fff;
+    background-image: url('../assets/person-solid.svg');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+}
+
+
+#generateMaze , .contador{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-size: 16px;
+    width: auto;
+    margin-bottom: 10px;
+    font-family: classy;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 5ms ease all;
+}
+  
+#generateMaze:hover {
+   background-color: #dbdbdb;
+   cursor: pointer;
+}
+
+
+
